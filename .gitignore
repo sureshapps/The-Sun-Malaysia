@@ -1,0 +1,22 @@
+# Hide selected source code
+/src/pages/
+/src/components/
+
+# Environment files
+.env
+.env.example
+
+# Configuration files
+components.json
+jsconfig.json
+package-lock.json
+package.json
+postcss.config.js
+vercel.json
+vite.config.js
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/

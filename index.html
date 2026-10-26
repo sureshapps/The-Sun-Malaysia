@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="theSun - Malaysia Daily News, Latest Headlines & Breaking Stories" />
+    <meta property="og:title" content="theSun - Malaysia Daily News" />
+    <meta property="og:description" content="Latest Malaysia news, breaking headlines, business, lifestyle and more." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="theSun" />
+
+    <title>theSun - Malaysia Daily News</title>
+
+    <style>
+      /* Splash screen — shown immediately on load (before JS/CSS bundle),
+         removed by main.jsx once the app has mounted + logo animation finishes.
+         Lives here (not in index.css) so it paints before any bundle download. */
+      #splash {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.45s ease, visibility 0.45s ease;
+      }
+      #splash.splash-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      #splash svg {
+        display: block;
+        width: 320px;
+        max-width: 70vw;
+      }
+      #splash .st0 {
+        fill: #005926;
+        stroke: #005926;
+        stroke-width: 0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        animation: splashDrawGreen 2.2s ease-in-out forwards;
+      }
+      #splash .st1 {
+        fill: #ed1c24;
+        stroke: #ed1c24;
+        stroke-width: 0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        animation: splashDrawRed 2.2s ease-in-out forwards;
+      }
+      @keyframes splashDrawGreen {
+        0% { stroke-width: 2.5; stroke-dashoffset: 1200; fill-opacity: 0; opacity: 0; }
+        15% { opacity: 1; stroke-width: 2.5; fill-opacity: 0; stroke-dashoffset: 800; }
+        50% { stroke-dashoffset: 0; fill-opacity: 0; stroke-width: 2.5; }
+        75% { fill-opacity: 1; stroke-width: 0; }
+        100% { fill-opacity: 1; stroke-width: 0; opacity: 1; }
+      }
+      @keyframes splashDrawRed {
+        0% { stroke-width: 2.5; stroke-dashoffset: 1200; fill-opacity: 0; opacity: 0; }
+        30% { opacity: 1; stroke-width: 2.5; fill-opacity: 0; stroke-dashoffset: 800; }
+        65% { stroke-dashoffset: 0; fill-opacity: 0; stroke-width: 2.5; }
+        90% { fill-opacity: 1; stroke-width: 0; }
+        100% { fill-opacity: 1; stroke-width: 0; opacity: 1; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #splash .st0, #splash .st1 { animation: none; fill-opacity: 1; stroke-width: 0; opacity: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="splash" aria-hidden="true">
+      <svg viewBox="0 0 841.89 595.28" xmlns="http://www.w3.org/2000/svg">
+        <path class="st0" stroke-dasharray="1200 1000" d="M91.8,53.64h39.06v126.78s3.06-1.32,14.89-1.32c23.16,0,47.77,22.76,47.77,68.62v204.07h-38.55v-209.78s-.9-27.51-12.3-27.51-11.81,27.51-11.81,27.51v209.78h-39.06V53.64Z"/>
+        <path class="st0" stroke-dasharray="1200 1000" d="M11.12,131.72h37.25v49.59h31.39v35.47h-30.51v152.66c0,6.43-2.71,47.4,19.19,47.4,7.62,0,15.91-2.69,15.91-2.69v35.11C7.01,467.7,11.12,378.88,11.12,369.27v-152.49H0v-35.47h11.12v-49.59Z"/>
+        <path class="st0" stroke-dasharray="1200 1000" d="M244.88,351.02c2.8,0,62.52-16.24,62.52-99.71,0-36.3-14.63-72.16-46.03-72.16-48.56,0-56.99,73.36-56.99,130.26,0,86.82,17.36,144.12,67.13,145.07,10.97.21,16.71-2.69,16.71-2.69v-34.98s-6.69,2.74-12.59,2.74c-23.76,0-30.75-50.28-30.75-68.52M260.79,214.18c7.06,0,8.17,25.08,8.17,35.36,0,54.39-25.35,64.66-25.35,64.66,0,0-1.77-100.02,17.18-100.02"/>
+        <path class="st1" stroke-dasharray="1200 1000" d="M399.68,50.99c33.79,0,53.09,15.81,53.09,15.81l-28.44,64.49s-29.33-16-37.75,2.44c-21.6,47.56,79.33,106.01,79.33,204.68,0,29.21-9.01,115.79-102.65,115.79-39.71,0-63.09-18.96-63.09-18.96l30.06-68.18s11.25,11.28,31.02,11.28c37.98,0,27.01-48.14,13.33-74.21-16.83-31.89-68.28-79.01-68.28-148.71,0-75.28,48.7-104.44,93.38-104.44"/>
+        <path class="st1" stroke-dasharray="1200 1000" d="M835.84,288.08v163.71l-75.66.02v-159.68s2.06-37.76-10.47-37.76-10.54,37.76-10.54,37.76v159.68h-75.88V181.31h71.02v5.02l5.71-5.99s6.68-1.36,10.19-1.36c43.26,0,85.63,26.85,85.63,109.1"/>
+        <path class="st1" stroke-dasharray="1200 1000" d="M475.06,181.31h75.97v162.98c0,17.26,1.53,34.79,10.55,34.79s10.73-15.67,10.73-34.79v-162.98h75.55v164.18c0,39.14-16.4,108.86-86.95,108.86-66.83,0-85.85-66.22-85.85-108.86v-164.18Z"/>
+      </svg>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Loading…</title>
+<style>
+  :root{
+    --bg: #ffffff;
+    --base: #d9d9d9;
+    --shine: #ececec;
+  }
+  *{ box-sizing: border-box; }
+  body{
+    margin: 0;
+    background: var(--bg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px;
+  }
+
+  .page{
+    width: 100%;
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 14px;
+  }
+
+  /* shimmer block */
+  .sk{
+    position: relative;
+    overflow: hidden;
+    background: var(--base);
+    border-radius: 14px;
+  }
+  .sk::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--shine) 50%,
+      transparent 100%
+    );
+    animation: shimmer 1.6s infinite;
+  }
+  @keyframes shimmer{
+    100%{ transform: translateX(100%); }
+  }
+
+  /* top strip */
+  .top-strip{ grid-column: 1 / -1; height: 20px; border-radius: 10px; }
+
+  /* header row: logo + search + two icons */
+  .header{
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 4px 0;
+  }
+  .logo{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    height: 46px;
+    user-select: none;
+  }
+  .logo svg{
+    height: 100%;
+    width: auto;
+    display: block;
+  }
+  .search{ flex: 1; height: 46px; }
+  .icon-round{ width: 46px; height: 46px; border-radius: 50%; flex-shrink: 0; }
+  .icon-pill{ width: 140px; height: 46px; flex-shrink: 0; }
+
+  /* secondary nav bar */
+  .subnav{ grid-column: 1 / -1; height: 28px; border-radius: 10px; }
+
+  /* main content */
+  .hero{ grid-column: 1 / span 8; height: 460px; }
+  .side{ grid-column: 9 / span 4; grid-row: 4 / span 2; height: 100%; }
+
+  .thumb{ grid-column: span 2; height: 130px; }
+
+  @media (max-width: 720px){
+    .header{ flex-wrap: wrap; }
+    .logo{ font-size: 24px; }
+    .hero{ grid-column: 1 / -1; height: 260px; }
+    .side{ grid-column: 1 / -1; grid-row: auto; height: 180px; }
+    .thumb{ grid-column: span 3; height: 90px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="page">
+    <div class="sk top-strip"></div>
+
+    <div class="header">
+      <div class="logo"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 841.89 595.28">
+  <defs>
+    <style>
+      .st0 { fill: #d9d9d9; }
+      .st1 { fill: #d9d9d9; }
+    </style>
+  </defs>
+  <path class="st1" d="M399.68,50.99c33.79,0,53.09,15.81,53.09,15.81l-28.44,64.49s-29.33-16-37.75,2.44c-21.6,47.56,79.33,106.01,79.33,204.68,0,29.21-9.01,115.79-102.65,115.79-39.71,0-63.09-18.96-63.09-18.96l30.06-68.18s11.25,11.28,31.02,11.28c37.98,0,27.01-48.14,13.33-74.21-16.83-31.89-68.28-79.01-68.28-148.71,0-75.28,48.7-104.44,93.38-104.44"/>
+  <path class="st1" d="M835.84,288.08v163.71l-75.66.02v-159.68s2.06-37.76-10.47-37.76-10.54,37.76-10.54,37.76v159.68h-75.88V181.31h71.02v5.02l5.71-5.99s6.68-1.36,10.19-1.36c43.26,0,85.63,26.85,85.63,109.1"/>
+  <path class="st1" d="M475.06,181.31h75.97v162.98c0,17.26,1.53,34.79,10.55,34.79s10.73-15.67,10.73-34.79v-162.98h75.55v164.18c0,39.14-16.4,108.86-86.95,108.86-66.83,0-85.85-66.22-85.85-108.86v-164.18Z"/>
+  <path class="st0" d="M91.8,53.64h39.06v126.78s3.06-1.32,14.89-1.32c23.16,0,47.77,22.76,47.77,68.62v204.07h-38.55v-209.78s-.9-27.51-12.3-27.51-11.81,27.51-11.81,27.51v209.78h-39.06V53.64Z"/>
+  <path class="st0" d="M11.12,131.72h37.25v49.59h31.39v35.47h-30.51v152.66c0,6.43-2.71,47.4,19.19,47.4,7.62,0,15.91-2.69,15.91-2.69v35.11C7.01,467.7,11.12,378.88,11.12,369.27v-152.49H0v-35.47h11.12v-49.59Z"/>
+  <path class="st0" d="M244.88,351.02c2.8,0,62.52-16.24,62.52-99.71,0-36.3-14.63-72.16-46.03-72.16-48.56,0-56.99,73.36-56.99,130.26,0,86.82,17.36,144.12,67.13,145.07,10.97.21,16.71-2.69,16.71-2.69v-34.98s-6.69,2.74-12.59,2.74c-23.76,0-30.75-50.28-30.75-68.52M260.79,214.18c7.06,0,8.17,25.08,8.17,35.36,0,54.39-25.35,64.66-25.35,64.66,0,0-1.77-100.02,17.18-100.02"/>
+</svg></div>
+      <div class="sk search"></div>
+      <div class="sk icon-round"></div>
+      <div class="sk icon-pill"></div>
+    </div>
+
+    <div class="sk subnav"></div>
+
+    <div class="sk hero"></div>
+    <div class="sk side"></div>
+
+    <div class="sk thumb"></div>
+    <div class="sk thumb"></div>
+    <div class="sk thumb"></div>
+    <div class="sk thumb"></div>
+  </div>
+
+</body>
+</html>
