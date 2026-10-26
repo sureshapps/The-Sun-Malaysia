@@ -14,10 +14,10 @@
 ![SWR](https://img.shields.io/badge/SWR-2.3.8-111111?style=for-the-badge)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-0891B2?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
-<a href="https://github.com/sureshapps/The-Sun-Malaysia"><img src="assets/readme/explore.png" alt="Explore the project" width="160" height="72"></a>
-<a href="https://github.com/sureshapps/The-Sun-Malaysia#-quick-start"><img src="assets/readme/quick.png" alt="Quick start" width="160" height="72"></a>
-<a href="https://github.com/sureshapps/The-Sun-Malaysia#-deployment"><img src="assets/readme/deploy.png" alt="Deployment" width="160" height="72"></a>
-<a href="https://github.com/sureshapps/The-Sun-Malaysia#-the-vite-migration"><img src="assets/readme/migra.png" alt="Migration" width="160" height="72"></a>
+<a href="https://github.com/sureshapps/The-Sun-Malaysia"><img src="assets/readme/explore.png" alt="Explore the project" width="170" height="72"></a>
+<a href="https://github.com/sureshapps/The-Sun-Malaysia#-quick-start"><img src="assets/readme/quick.png" alt="Quick start" width="170" height="72"></a>
+<a href="https://github.com/sureshapps/The-Sun-Malaysia#-deployment"><img src="assets/readme/deploy.png" alt="Deployment" width="170" height="72"></a>
+<a href="https://github.com/sureshapps/The-Sun-Malaysia#-the-vite-migration"><img src="assets/readme/migra.png" alt="Migration" width="170" height="72"></a>
 
 <img src="assets/readme/the-sun-reimagined.jpg" alt="The Sun, Reimagined — promotional overview with desktop, tablet and mobile layouts" width="100%">
 
