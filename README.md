@@ -1,6 +1,8 @@
+<a id="readme-top"></a>
+
 <div align="center">
 
-# ☀️ THE SUN MALAYSIA
+<h1><img src="assets/readme/the-sun-malaysia-title.svg" alt="THE SUN MALAYSIA" width="800"></h1>
 
 ### News that matters. A fresh digital experience.
 
@@ -12,7 +14,10 @@
 ![SWR](https://img.shields.io/badge/SWR-2.3.8-111111?style=for-the-badge)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-0891B2?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
-[Explore the project](https://github.com/sureshapps/The-Sun-Malaysia) · [Quick start](#-quick-start) · [Deployment](#-deployment) · [Migration](#-the-vite-migration)
+<a href="https://github.com/sureshapps/The-Sun-Malaysia"><img src="assets/readme/explore-project.svg" alt="Explore the project" width="220" height="72"></a>
+<a href="https://github.com/sureshapps/The-Sun-Malaysia#-quick-start"><img src="assets/readme/quick-start.svg" alt="Quick start" width="220" height="72"></a>
+<a href="https://github.com/sureshapps/The-Sun-Malaysia#-deployment"><img src="assets/readme/deployment.svg" alt="Deployment" width="220" height="72"></a>
+<a href="https://github.com/sureshapps/The-Sun-Malaysia#-the-vite-migration"><img src="assets/readme/migration.svg" alt="Migration" width="220" height="72"></a>
 
 <img src="assets/readme/the-sun-reimagined.jpg" alt="The Sun, Reimagined — promotional overview with desktop, tablet and mobile layouts" width="100%">
 
@@ -254,6 +259,6 @@ Promotional images were supplied for this README. The Sun name, logos, editorial
 **☀️ THE SUN MALAYSIA**  
 **Stay informed. Stay connected.**
 
-[Back to top](#️-the-sun-malaysia)
+[Back to top](#readme-top)
 
 </div>
